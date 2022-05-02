@@ -97,9 +97,10 @@ int checkFreeSpaces()   //This function checks free spaces to determine if game 
 }
 void playerMove()
 {
+    int x;  // local variables x and y to take user input
+    int y;
+    
     do {
-        int x;  // local variables x and y to take user input
-        int y;
         printf("Enter row number(1-3): ");
         scanf("%d", &x); // We take user input in terms of int and store in address(&) of var int x
         x--;
@@ -182,14 +183,14 @@ void printWinnner(char winner)
 {
     if (winner == PLAYER)
     {
-        printf("YOU WIN!");
+        printf("YOU WIN!\n");
     }
     else if (winner == COMPUTER)
     {
-        printf("YOU LOSE!");
+        printf("YOU LOSE!\n");
     }
     else
     {
-        printf("IT'S A TIE!");
+        printf("IT'S A TIE!\n");
     }
 }
